@@ -66,16 +66,12 @@ def error():
 @app.route('/graph')
 def graph():
     df = to_dataframe(app.json_data,25)
-    f=open('data.txt','w')
-    f.write('%s\n'%(df))
     name_map = {'Closing':'Close',
                 'Opening':'Open',
                 'Adj_closing':'Adj. Close',
                 'Adj_opening':'Adj. Open'}
     
     plot_set = [name_map[key] for key in app.stockForm.data.keys() if app.stockForm.data[key] == True]
-    f.write('%s\n'%plot_set)
-    f.close()
     
     #make color palette for the lines
     numlines=len(plot_set) 
