@@ -109,7 +109,7 @@ def graph():
         
     script, div = components(p)
 
-    return render_template('graph.html', stock_name = app.stockForm.data['stock'], script=script, div=div)
+    return render_template('graph.html', script=script, div=div)
 
 
 if __name__ == '__main__':
