@@ -47,6 +47,7 @@ def index():
     else:
         app.stockForm = form
         json_data = get_data(app.stockForm.data['stock'])
+        app.stock_name='%s' % app.stockForm.data['stock']
         app.json_data = json_data
         if 'error' in json_data:
         	return render_template('error.html')
@@ -108,8 +109,7 @@ def graph():
         	p.line('index', 'price'+str(color_index+1), source=df_plot, line_color=mypalette[color_index], line_width=2, legend=line_name)
         
     script, div = components(p)
-
-    return render_template('graph.html', script=script, div=div)
+    return render_template('graph.html', script=script, div=div, data=app.stock_name)
 
 
 if __name__ == '__main__':

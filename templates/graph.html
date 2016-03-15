@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Stock graph</title>
+		<link rel="shortcut icon" href = "{{ url_for('static',filename='icon.ico') }}" >
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -14,9 +15,9 @@
 	</head>
 	<body>
 		<div class=page>
-  			<h1>Data from Quandl WIKI <br>
-  				<a href="{{ url_for('index') }}">Back</a>
-  			</h1>
+  			<h1 align="center" color="#377BA8" size="28px">Visualization for {{ data | safe }}</h1>
+  			<h2 align="right" color="#377BA8" size="20px"><a href="{{ url_for('index') }}">Back</a></h2>
+  			<p align="left">Hover over each line to see exact value.</h2>
   			{{ div | safe }}
 		</div>
 	</body>
