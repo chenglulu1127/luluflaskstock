@@ -10,5 +10,5 @@ You can find the app [here](http://luluflaskstock.herokuapp.com). Feel free to p
 3. If you don't type in a valid ticker symbol, error page will display and you can go back to main page.
 
 ### Reference
-...[flask-demo repository](https://github.com/thedataincubator/flask-demo)
-...[Flask tutorial](https://github.com/bev-a-tron/MyFlaskTutorial)
+* [flask-demo repository](https://github.com/thedataincubator/flask-demo)
+* [Flask tutorial](https://github.com/bev-a-tron/MyFlaskTutorial)
