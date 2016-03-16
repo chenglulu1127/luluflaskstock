@@ -1,6 +1,6 @@
 ### Introduction
 This project is intended to practice on Git, Flask, JSON, Pandas, Requests, Heroku, and Bokeh for visualization.
-The repository contains all needed for a Flask configuration that works on Heroku.
+The repository contains all needed for a Flask configuration that works on Heroku. Also the pages are beautified using a customized .css file.
 
 ### Demo
 You can find the app [here](http://luluflaskstock.herokuapp.com). Feel free to play with it:
